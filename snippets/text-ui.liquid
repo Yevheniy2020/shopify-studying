@@ -1,0 +1,23 @@
+{{ 'text-ui.css' | asset_url | stylesheet_tag }}
+{% case type %}
+  {% when 'h1' %}
+    <h1 class="h1-level">{{ text }}</h1>
+  {% when 'h2' %}
+    <h2 class="h2-level">{{ text }}</h2>
+  {% when 'h3' %}
+    <h3 class="h3-level">{{ text }}</h3>
+  {% when 'h4' %}
+    <h4 class="h4-level">{{ text }}</h4>
+  {% when 'h5' %}
+    <h5 class="h5-level">{{ text }}</h5>
+  {% when 'h6' %}
+    <h6>{{ text }}</h6>
+  {% when 'p' %}
+    <p>{{ text }}</p>
+  {% when 'span' %}
+    <span>{{ text }}</span>
+  {% when 'div' %}
+    <div>{{ text }}</div>
+  {% else %}
+    <p>{{ text }}</p>
+{% endcase %}

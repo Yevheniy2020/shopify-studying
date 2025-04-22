@@ -1,0 +1,94 @@
+.h1-level,
+.h2-level,
+.h3-level,
+.h4-level,
+.h5-level {
+  margin: 0 !important;
+}
+/* --- h1 --- */
+.h1-level {
+  font-family: var(--font-family-calypso) !important;
+  line-height: var(--line-height-125) !important;
+  letter-spacing: var(--letter-spacing-3) !important;
+  font-size: var(--font-size-60) !important;
+}
+@media (width <= 768px) {
+  .h1-level {
+    line-height: var(--line-height-128) !important;
+    font-size: var(--font-size-35) !important;
+  }
+}
+@media (width <= 576px) {
+  .h1-level {
+    font-size: var(--font-size-30) !important;
+  }
+}
+/* --- h2 --- */
+.h2-level {
+  font-family: var(--font-family-calypso) !important;
+  line-height: var(--line-height-122) !important;
+  letter-spacing: var(--letter-spacing-3) !important;
+  font-size: var(--font-size-45) !important;
+}
+@media (width <= 768px) {
+  .h2-level {
+    font-size: var(--font-size-25) !important;
+    line-height: var(--line-height-160) !important;
+  }
+}
+/* --- h3 --- */
+.h3-level {
+  font-family: var(--font-family-calypso) !important;
+  line-height: var(--line-height-137) !important;
+  letter-spacing: var(--letter-spacing-3) !important;
+  font-size: var(--font-size-40) !important;
+}
+@media (width <= 768px) {
+  .h3-level {
+    font-size: var(--font-size-25) !important;
+    line-height: var(--line-height-160) !important;
+  }
+}
+/* --- h4 --- */
+.h4-level {
+  font-family: var(--font-family-calypso) !important;
+  line-height: var(--line-height-150) !important;
+  letter-spacing: var(--letter-spacing-3) !important;
+  font-size: var(--font-size-30) !important;
+}
+@media (width <= 768px) {
+  .h4-level {
+    font-size: var(--font-size-25) !important;
+  }
+}
+/* --- h5 --- */
+.h5-level {
+  font-family: var(--font-family-gilroy) !important;
+  line-height: var(--line-height-150) !important;
+  letter-spacing: var(--letter-spacing-5) !important;
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-30) !important;
+}
+@media (width <= 768px) {
+  .h5-level {
+    font-size: var(--font-size-30) !important;
+  }
+}
+@media (width <= 576px) {
+  .h5-level {
+    line-height: var(--line-height-160) !important;
+    font-size: var(--font-size-16) !important;
+  }
+}
+/* --- h5 --- */
+.h6-level {
+  font-family: var(--font-family-calypso) !important;
+  line-height: var(--line-height-200) !important;
+  letter-spacing: var(--letter-spacing-5) !important;
+  font-size: var(--font-size-25) !important;
+}
+@media (width <= 576px) {
+  .h6-level {
+    font-size: var(--font-size-20) !important;
+  }
+}

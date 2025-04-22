@@ -1,0 +1,72 @@
+{% schema %}
+{
+  "name": "Section Hero",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "label": "Image ratio",
+      "options": [
+        {
+          "value": "auto",
+          "label": "Original image ratio"
+        },
+        {
+          "value": "square",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait (2:3)"
+        },
+        {
+          "value": "landscape",
+          "label": "Landscape (3:2)"
+        },
+        {
+          "value": "wide",
+          "label": "Wide (16:9)"
+        }
+      ],
+      "default": "auto"
+    },
+    {
+      "type": "text",
+      "id": "image_alt",
+      "label": "Image alt text",
+      "info": "Describe the image for people who use screen readers"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Image width",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Section Hero"
+    }
+  ]
+}
+{% endschema %}
+
+<div style="max-width: {{ section.settings.image_width }}%; margin: 0 auto;">
+  {% render 'text-ui', type: 'h2', text: 'Hello World' %}
+  {% render 'adaptive-image',
+    image: section.settings.image,
+    image_ratio: section.settings.image_ratio,
+    alt_text: section.settings.image_alt
+  %}
+</div>

@@ -1,0 +1,46 @@
+:root {
+  /* Color */
+  --color-primary: #3498db;
+  --color-primary-dark: #2980b9;
+  --color-secondary: #e74c3c;
+  --color-secondary-dark: #c0392b;
+  --color-success: #2ecc71;
+  --color-warning: #f39c12;
+  --color-danger: #e74c3c;
+  --color-info: #3498db;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-gray-100: #f8f9fa;
+  --color-gray-200: #e9ecef;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #6c757d;
+  --color-gray-700: #495057;
+  --color-gray-800: #343a40;
+  --color-gray-900: #212529;
+
+  /* Container */
+  --container-max-width: 1200px;
+  --container-width-sm: 540px;
+  --container-width-md: 720px;
+  --container-width-lg: 960px;
+  --container-width-xl: 1140px;
+  --container-fluid-width: clamp(320px, 90%, var(--container-max-width));
+}
+
+/* grid.css */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  margin: 0 auto;
+}
+
+.container-fluid {
+  width: var(--container-fluid-width);
+  padding-left: var(--space-4);
+  padding-right: var(--space-4);
+  margin: 0 auto;
+}

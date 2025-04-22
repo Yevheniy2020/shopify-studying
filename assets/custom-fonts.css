@@ -1,0 +1,101 @@
+/* --- Calypso --- */
+
+@font-face {
+  font-family: "Calypso";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Calypso.woff2?v=1745009248")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Calypso.woff?v=1745009247")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Gilroy --- */
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Thin.woff2?v=1745320062")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Thin.woff?v=1745320062")
+      format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Light.woff2?v=1745320152")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Light.woff?v=1745320152")
+      format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Regular.woff2?v=1745320193")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Regular.woff?v=1745320193")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Medium.woff2?v=1745320257")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Medium.woff?v=1745320258")
+      format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-SemiBold.woff2?v=1745320314")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-SemiBold.woff?v=1745320314")
+      format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Heavy.woff2?v=1745320359")
+      format("woff2"),
+    url("https://cdn.shopify.com/s/files/1/0916/4554/2765/files/Gilroy-Heavy.woff?v=1745320359")
+      format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* __ font-family __ */
+  --font-family-heading: "Montserrat", "Helvetica", sans-serif;
+  --font-family-mono: "Source Code Pro", monospace;
+  --font-family-calypso: "Calypso", monospace;
+  --font-family-gilroy: "Gilroy", monospace;
+}
+/* --- Font Family --- */
+.ff-calypso {
+  font-family: var(--font-family-calypso);
+}
+.ff-mono {
+  font-family: var(--font-family-mono);
+}
+.ff-heading {
+  font-family: var(--font-family-heading);
+}
+.ff-gilroy {
+  font-family: var(--font-family-gilroy);
+}

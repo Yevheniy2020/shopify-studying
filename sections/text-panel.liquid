@@ -1,0 +1,67 @@
+<div class="text-panel">
+  {% for block in section.blocks %}
+    {% render 'text-ui', type: block.settings.text_type, text: block.settings.text_content %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Text Panel",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Text Block",
+      "settings": [
+        {
+          "type": "select",
+          "id": "text_type",
+          "label": "Text Type",
+          "options": [
+            {
+              "value": "h1",
+              "label": "Heading 1"
+            },
+            {
+              "value": "h2",
+              "label": "Heading 2"
+            },
+            {
+              "value": "h3",
+              "label": "Heading 3"
+            },
+            {
+              "value": "h4",
+              "label": "Heading 4"
+            },
+            {
+              "value": "h5",
+              "label": "Heading 5"
+            },
+            {
+              "value": "h6",
+              "label": "Heading 6"
+            },
+            {
+              "value": "p",
+              "label": "Paragraph"
+            }
+          ],
+          "default": "p"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text_content",
+          "label": "Text Content",
+          "default": "Enter your text here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text Panel"
+    }
+  ]
+}
+{% endschema %}
